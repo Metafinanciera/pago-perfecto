@@ -159,49 +159,47 @@ ul    { list-style: none; }
    REQUISITOS
    ============================================================ */
 .section-requisitos {
-  background-image: url('../img/fondo1.jpg');
-  background-size: cover;
-  background-position: center 60%;
+  background: linear-gradient(150deg, #2586be 0%, #1a5a9e 45%, #152d60 100%);
   padding: 44px 20px 54px;
 }
 .section-inner {
-  max-width: 760px;
+  max-width: 800px;
   margin: 0 auto;
 }
 .section-title-red {
-  font-size: 34px;
+  font-size: 36px;
   font-weight: 800;
   color: #e8614a;
   text-align: center;
-  margin-bottom: 32px;
+  margin-bottom: 36px;
 }
 
 /* Cards */
 .requisitos-grid {
   display: flex;
   flex-wrap: wrap;
-  gap: 18px;
+  gap: 24px;
   justify-content: center;
 }
 .req-card {
   background: #fff;
-  border-radius: 20px;
-  padding: 28px 20px 24px;
-  width: 210px;
-  min-height: 210px;
-  box-shadow: 0 6px 24px rgba(0,0,0,0.22);
+  border-radius: 22px;
+  padding: 32px 22px 28px;
+  width: 230px;
+  min-height: 230px;
+  box-shadow: 0 6px 28px rgba(0,0,0,0.25);
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
 }
 .req-num {
-  font-size: 72px;
+  font-size: 84px;
   font-weight: 800;
   color: #e8614a;
   line-height: 1;
   display: block;
-  margin-bottom: 14px;
+  margin-bottom: 16px;
 }
 .req-card p {
   font-size: 15px;
