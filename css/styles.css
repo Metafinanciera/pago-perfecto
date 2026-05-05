@@ -1,0 +1,643 @@
+/* ============================================
+   PAGO PERFECTO - MetaFinanciera
+   CSS estático - sin dependencias de Unbounce
+   ============================================ */
+
+/* --- Reset y base --- */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+  color: #000;
+  background: #eeeeee;
+  min-width: 320px;
+}
+
+a {
+  color: #003160;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+ul {
+  list-style: none;
+}
+
+/* ============================================
+   HEADER
+   ============================================ */
+.site-header {
+  background: #ffffff;
+  width: 100%;
+  height: 67px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+}
+
+.header-content {
+  max-width: 760px;
+  margin: 0 auto;
+  height: 67px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 29px;
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+}
+
+.header-logo img {
+  width: 87px;
+  height: 29px;
+  object-fit: contain;
+}
+
+.btn-contacto {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #f2615f;
+  color: #ffffff;
+  border-radius: 10px;
+  padding: 0 14px;
+  height: 32px;
+  font-size: 14px;
+  font-weight: 700;
+  font-family: 'Nunito', sans-serif;
+  transition: background 0.2s;
+  white-space: nowrap;
+}
+
+.btn-contacto:hover {
+  background: #e64a48;
+  color: #fff;
+}
+
+.btn-contacto:active {
+  background: #da3d3c;
+}
+
+/* ============================================
+   HERO SECTION
+   ============================================ */
+.hero {
+  background-color: rgba(0, 49, 96, 0);
+  background-image: url('../img/fondo1.jpg');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  min-height: 389px;
+  position: relative;
+  overflow: visible;
+}
+
+.hero-content {
+  max-width: 760px;
+  margin: 0 auto;
+  min-height: 389px;
+  position: relative;
+}
+
+.hero-text {
+  position: absolute;
+  left: 25px;
+  top: 159px;
+  width: 319px;
+  z-index: 3;
+}
+
+.hero-title {
+  font-size: 72px;
+  font-weight: 700;
+  font-family: 'Nunito', sans-serif;
+  color: #0e1a2e;
+  line-height: 77px;
+}
+
+.hero-subtitle {
+  font-weight: 300;
+  font-family: 'Nunito', sans-serif;
+  font-size: 24px;
+  color: #ffffff;
+  line-height: 26px;
+  margin-top: 8px;
+}
+
+/* Hero decorative images positioned as in original (relative to the 760px content box) */
+.hero-image {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 760px;
+  height: 445px;
+  pointer-events: none;
+}
+
+.hero-persona {
+  position: absolute;
+  left: 315px;
+  top: 13px;
+  width: 445px;
+  height: 445px;
+  object-fit: contain;
+}
+
+.hero-flecha {
+  position: absolute;
+  left: 176px;
+  top: 86px;
+  width: 94px;
+  height: 94px;
+}
+
+.hero-cruz {
+  position: absolute;
+  left: 247px;
+  top: 386px;
+  width: 43px;
+  height: 41px;
+  z-index: 10;
+}
+
+/* ============================================
+   BANNER OPORTUNIDADES
+   ============================================ */
+.banner-oportunidades {
+  background: #0e1a2e;
+  width: 100%;
+  min-height: 112px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 40px;
+}
+
+.banner-oportunidades p {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 600;
+  font-size: 22px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 1.4;
+}
+
+.banner-oportunidades strong {
+  font-weight: 800;
+}
+
+/* ============================================
+   SECCION VALORAMOS
+   ============================================ */
+.section-valoramos {
+  background: #ffffff;
+  width: 100%;
+  padding: 30px 0;
+}
+
+.section-valoramos-content {
+  max-width: 760px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  padding: 0 20px;
+}
+
+.valoramos-image {
+  flex-shrink: 0;
+}
+
+.valoramos-image img {
+  width: 331px;
+  height: 304px;
+  object-fit: cover;
+}
+
+.valoramos-text {
+  flex: 1;
+  padding: 20px 10px;
+}
+
+.valoramos-text h2 {
+  font-size: 26px;
+  font-weight: 700;
+  font-family: 'Nunito', sans-serif;
+  color: #003160;
+  line-height: 1.3;
+  margin-bottom: 16px;
+}
+
+.valoramos-text p {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 400;
+  color: #003160;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+/* ============================================
+   SECCION REQUISITOS
+   ============================================ */
+.section-requisitos {
+  background: #0e1a2e;
+  background-image: url('../img/fondo1.jpg');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-size: cover;
+  width: 100%;
+  padding: 50px 20px;
+}
+
+.section-inner {
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.section-title-red {
+  font-size: 28px;
+  font-weight: 800;
+  font-family: 'Nunito', sans-serif;
+  color: #f2615f;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.requisitos-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.requisito-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 227px;
+}
+
+.requisito-cuadro {
+  position: relative;
+  width: 227px;
+  height: 232px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.cuadro-bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.requisito-numero {
+  position: relative;
+  z-index: 1;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 800;
+  font-size: 80px;
+  color: #f2615f;
+  line-height: 1;
+}
+
+.requisito-texto {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 800;
+  font-size: 16px;
+  color: #003160;
+  text-align: center;
+  margin-top: 10px;
+  padding: 0 10px;
+}
+
+.requisito-texto .text-light {
+  font-weight: 400;
+  font-size: 14px;
+}
+
+/* ============================================
+   SECCION BENEFICIOS
+   ============================================ */
+.section-beneficios {
+  background: #ecf0f5;
+  width: 100%;
+  padding: 50px 20px;
+}
+
+.beneficios-intro {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #003160;
+  text-align: center;
+  max-width: 670px;
+  margin: 0 auto 12px;
+  line-height: 1.6;
+}
+
+.beneficios-elige {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  color: #003160;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.ciclo-titulo {
+  font-size: 20px;
+  font-weight: 800;
+  font-family: 'Nunito', sans-serif;
+  color: #f2615f;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.ciclo-titulo-20 {
+  margin-top: 40px;
+}
+
+.ciclos-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.ciclo-item img {
+  width: 193px;
+  height: 159px;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+.terminos-nota {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #003160;
+  text-align: center;
+  margin-top: 30px;
+}
+
+/* ============================================
+   FOOTER
+   ============================================ */
+.site-footer {
+  background: #ecf0f5;
+  border-top: 1px solid #d0d8e4;
+  width: 100%;
+  padding: 40px 20px 20px;
+}
+
+.footer-content {
+  max-width: 760px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: space-between;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #d0d8e4;
+}
+
+.footer-logo-col {
+  flex: 0 0 212px;
+}
+
+.footer-logo-col img {
+  margin-bottom: 14px;
+}
+
+.footer-mision {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  color: #003160;
+  line-height: 1.6;
+}
+
+.footer-menu-col,
+.footer-legal-col,
+.footer-social-col {
+  flex: 1;
+  min-width: 120px;
+}
+
+.footer-menu-col h4,
+.footer-legal-col h4,
+.footer-social-col h4 {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  color: #003160;
+  margin-bottom: 12px;
+}
+
+.footer-menu-col ul li,
+.footer-legal-col ul li {
+  margin-bottom: 4px;
+}
+
+.footer-menu-col ul li a,
+.footer-legal-col ul li a {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  color: #003160;
+  transition: color 0.2s;
+}
+
+.footer-menu-col ul li a:hover,
+.footer-legal-col ul li a:hover {
+  color: #f2615f;
+}
+
+.social-links {
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap;
+}
+
+.social-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: opacity 0.2s;
+}
+
+.social-btn:hover {
+  opacity: 0.85;
+}
+
+.social-btn img {
+  width: 37px;
+  height: 36px;
+  object-fit: contain;
+  display: block;
+}
+
+.footer-copyright {
+  max-width: 760px;
+  margin: 16px auto 0;
+  text-align: center;
+}
+
+.footer-copyright p {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  color: #003160;
+}
+
+/* ============================================
+   RESPONSIVE - MOBILE (max-width: 600px)
+   ============================================ */
+@media only screen and (max-width: 600px) {
+
+  /* Header */
+  .header-content {
+    padding: 0 10px;
+  }
+
+  /* Hero */
+  .hero {
+    background-image: url('../img/fondo1-mobile.jpg');
+    background-attachment: scroll;
+    min-height: 601px;
+  }
+
+  .hero-content {
+    min-height: 601px;
+  }
+
+  .hero-text {
+    left: 34px;
+    top: 153px;
+    width: 252px;
+    transform: scale(0.87);
+    transform-origin: 0 0;
+  }
+
+  .hero-title {
+    font-size: 62px;
+  }
+
+  .hero-subtitle {
+    font-size: 20px;
+  }
+
+  .hero-flecha {
+    left: 183px;
+    top: 88px;
+    width: 93px;
+    height: 93px;
+  }
+
+  .hero-cruz {
+    left: 189px;
+    top: 370px;
+    width: 46px;
+    height: 43px;
+  }
+
+  /* Banner */
+  .banner-oportunidades {
+    min-height: 141px;
+    padding: 20px 14px;
+  }
+
+  .banner-oportunidades p {
+    font-size: 18px;
+    text-align: left;
+  }
+
+  /* Valoramos */
+  .section-valoramos-content {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .valoramos-image img {
+    width: 100%;
+    height: auto;
+  }
+
+  .valoramos-text {
+    padding: 20px;
+  }
+
+  .valoramos-text h2 {
+    font-size: 22px;
+  }
+
+  /* Requisitos */
+  .section-requisitos {
+    background-attachment: scroll;
+  }
+
+  .requisitos-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Beneficios */
+  .ciclos-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .ciclo-item img {
+    width: 223px;
+    height: auto;
+  }
+
+  /* Footer */
+  .footer-content {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .footer-logo-col {
+    flex: none;
+    width: 100%;
+  }
+
+  .footer-menu-col,
+  .footer-legal-col,
+  .footer-social-col {
+    width: 100%;
+  }
+
+  .social-links {
+    gap: 8px;
+  }
+}
