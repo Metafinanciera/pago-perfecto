@@ -54,25 +54,25 @@ ul    { list-style: none; }
   background-image: url('../img/fondo1.jpg');
   background-size: cover;
   background-position: center top;
-  min-height: 500px;
+  min-height: 450px;
   position: relative;
   overflow: hidden;
 }
 .hero-content {
-  max-width: 1200px;
+  max-width: 900px;
   margin: 0 auto;
-  min-height: 500px;
+  min-height: 450px;
   position: relative;
 }
 .hero-text {
   position: absolute;
-  left: 40px;
-  top: 110px;
+  left: 30px;
+  top: 120px;
   z-index: 3;
-  max-width: 380px;
+  width: 300px;
 }
 .hero-title {
-  font-size: 80px;
+  font-size: 76px;
   font-weight: 800;
   color: #0e1a2e;
   line-height: 1;
@@ -81,31 +81,31 @@ ul    { list-style: none; }
   font-size: 22px;
   font-weight: 300;
   color: #fff;
-  margin-top: 14px;
+  margin-top: 12px;
   line-height: 1.3;
 }
 .hero-persona {
   position: absolute;
   right: 0;
   bottom: 0;
-  height: 100%;
+  height: 105%;
   width: auto;
-  max-width: 65%;
+  max-width: 62%;
   object-fit: contain;
   object-position: bottom right;
 }
 .hero-flecha {
   position: absolute;
-  left: 320px;
-  top: 60px;
-  width: 90px;
+  left: 270px;
+  top: 55px;
+  width: 86px;
   z-index: 4;
 }
 .hero-cruz {
   position: absolute;
-  left: 390px;
-  bottom: 30px;
-  width: 42px;
+  left: 330px;
+  bottom: 28px;
+  width: 40px;
   z-index: 4;
 }
 
@@ -162,25 +162,25 @@ ul    { list-style: none; }
   background-image: url('../img/fondo1.jpg');
   background-size: cover;
   background-position: center 60%;
-  padding: 60px 20px 70px;
+  padding: 44px 20px 54px;
 }
 .section-inner {
   max-width: 760px;
   margin: 0 auto;
 }
 .section-title-red {
-  font-size: 36px;
+  font-size: 34px;
   font-weight: 800;
   color: #e8614a;
   text-align: center;
-  margin-bottom: 44px;
+  margin-bottom: 32px;
 }
 
 /* Cards */
 .requisitos-grid {
   display: flex;
   flex-wrap: wrap;
-  gap: 22px;
+  gap: 18px;
   justify-content: center;
 }
 .req-card {
@@ -219,37 +219,37 @@ ul    { list-style: none; }
    ============================================================ */
 .section-beneficios {
   background: #e8ecf2;
-  padding: 60px 20px 70px;
+  padding: 44px 20px 54px;
 }
 .beneficios-intro {
-  font-size: 17px;
+  font-size: 16px;
   font-weight: 400;
   color: #003160;
   text-align: center;
   max-width: 680px;
-  margin: 0 auto 14px;
+  margin: 0 auto 10px;
   line-height: 1.6;
 }
 .beneficios-elige {
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 700;
   color: #003160;
   text-align: center;
-  margin-bottom: 36px;
+  margin-bottom: 24px;
 }
 .ciclo-titulo {
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 800;
   color: #e8614a;
   text-align: center;
-  margin-bottom: 22px;
+  margin-bottom: 16px;
 }
-.ciclo-titulo-20 { margin-top: 44px; }
+.ciclo-titulo-20 { margin-top: 32px; }
 
 .ciclos-grid {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 16px;
   justify-content: center;
 }
 
