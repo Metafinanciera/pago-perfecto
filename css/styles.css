@@ -162,6 +162,9 @@ ul    { list-style: none; }
   background: linear-gradient(150deg, #2586be 0%, #1a5a9e 45%, #152d60 100%);
   padding: 44px 20px 54px;
 }
+.section-requisitos .section-title-red {
+  color: #ffffff;
+}
 .section-inner {
   max-width: 800px;
   margin: 0 auto;
@@ -194,7 +197,7 @@ ul    { list-style: none; }
   text-align: center;
 }
 .req-num {
-  font-size: 66px;
+  font-size: 54px;
   font-weight: 800;
   color: #e8614a;
   line-height: 1;
