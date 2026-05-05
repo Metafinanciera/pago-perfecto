@@ -178,28 +178,28 @@ ul    { list-style: none; }
 .requisitos-grid {
   display: flex;
   flex-wrap: wrap;
-  gap: 24px;
+  gap: 20px;
   justify-content: center;
 }
 .req-card {
   background: #fff;
-  border-radius: 22px;
-  padding: 32px 22px 28px;
-  width: 230px;
-  min-height: 230px;
-  box-shadow: 0 6px 28px rgba(0,0,0,0.25);
+  border-radius: 20px;
+  padding: 24px 18px 20px;
+  width: 200px;
+  min-height: 200px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.22);
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
 }
 .req-num {
-  font-size: 84px;
+  font-size: 66px;
   font-weight: 800;
   color: #e8614a;
   line-height: 1;
   display: block;
-  margin-bottom: 16px;
+  margin-bottom: 12px;
 }
 .req-card p {
   font-size: 15px;
