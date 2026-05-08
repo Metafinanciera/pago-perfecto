@@ -366,30 +366,33 @@ ul    { list-style: none; }
   .header-logo img { width: 90px; }
   .btn-contacto { font-size: 15px; padding: 10px 24px; }
 
-  /* Hero — texto arriba, señoras full-width abajo */
+  /* Hero — texto centrado arriba, señoras full-width abajo */
   .hero {
     background-image: url('../img/fondo1-mobile.jpg');
     background-size: cover;
     background-position: center top;
-    min-height: 680px;
+    min-height: 640px;
   }
-  .hero-content { min-height: 680px; }
+  .hero-content { min-height: 640px; }
 
+  /* Texto: centrado horizontalmente */
   .hero-text {
-    left: 20px;
-    top: 48px;
-    width: 68%;
-    max-width: none;
+    left: 0;
+    right: 0;
+    top: 28px;
+    width: 100%;
+    padding: 0 20px;
+    text-align: center;
   }
-  .hero-title  { font-size: 68px; line-height: 1; }
-  .hero-subtitle { font-size: 20px; margin-top: 14px; line-height: 1.35; }
+  .hero-title    { font-size: 66px; line-height: 1.02; }
+  .hero-subtitle { font-size: 20px; margin-top: 12px; line-height: 1.3; }
 
-  /* Señoras: ancho completo pegadas al fondo */
+  /* Señoras: ancho completo pegadas al fondo, centradas */
   .hero-persona {
     position: absolute;
     bottom: 0;
-    left: 0;
-    right: auto;
+    left: 50%;
+    transform: translateX(-50%);
     width: 100%;
     height: auto;
     max-width: 100%;
@@ -400,17 +403,17 @@ ul    { list-style: none; }
   /* Flecha: arriba a la derecha */
   .hero-flecha {
     left: auto;
-    right: 14px;
-    top: 22px;
-    width: 78px;
+    right: 12px;
+    top: 18px;
+    width: 74px;
   }
 
-  /* Plus: entre texto y señoras */
+  /* Plus: centrado entre texto y señoras */
   .hero-cruz {
-    left: 52%;
-    bottom: 310px;
-    width: 38px;
+    left: 50%;
     transform: translateX(-50%);
+    bottom: 330px;
+    width: 36px;
   }
 
   /* Banner */
