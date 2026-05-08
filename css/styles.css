@@ -360,30 +360,75 @@ ul    { list-style: none; }
    RESPONSIVE MOBILE
    ============================================================ */
 @media (max-width: 768px) {
-  .header-content { padding: 14px 20px; }
+
+  /* Header */
+  .header-content { padding: 12px 20px; }
   .header-logo img { width: 90px; }
-  .btn-contacto { font-size: 15px; padding: 10px 22px; }
+  .btn-contacto { font-size: 15px; padding: 10px 24px; }
 
-  .hero { background-image: url('../img/fondo1-mobile.jpg'); min-height: 520px; }
-  .hero-content { min-height: 520px; }
-  .hero-text { left: 20px; top: 80px; max-width: 260px; }
-  .hero-title { font-size: 56px; }
-  .hero-subtitle { font-size: 18px; }
-  .hero-persona { max-width: 80%; }
-  .hero-flecha { left: auto; right: 60px; top: 30px; width: 70px; }
-  .hero-cruz { left: 180px; bottom: 20px; width: 34px; }
+  /* Hero — texto arriba, señoras full-width abajo */
+  .hero {
+    background-image: url('../img/fondo1-mobile.jpg');
+    background-size: cover;
+    background-position: center top;
+    min-height: 680px;
+  }
+  .hero-content { min-height: 680px; }
 
-  .banner-oportunidades { padding: 20px; }
+  .hero-text {
+    left: 20px;
+    top: 48px;
+    width: 68%;
+    max-width: none;
+  }
+  .hero-title  { font-size: 68px; line-height: 1; }
+  .hero-subtitle { font-size: 20px; margin-top: 14px; line-height: 1.35; }
+
+  /* Señoras: ancho completo pegadas al fondo */
+  .hero-persona {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: auto;
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    object-fit: contain;
+    object-position: bottom center;
+  }
+
+  /* Flecha: arriba a la derecha */
+  .hero-flecha {
+    left: auto;
+    right: 14px;
+    top: 22px;
+    width: 78px;
+  }
+
+  /* Plus: entre texto y señoras */
+  .hero-cruz {
+    left: 52%;
+    bottom: 310px;
+    width: 38px;
+    transform: translateX(-50%);
+  }
+
+  /* Banner */
+  .banner-oportunidades { padding: 20px 24px; }
   .banner-oportunidades p { font-size: 18px; }
 
+  /* Valoramos */
   .section-valoramos-content { flex-direction: column; }
-  .valoramos-image img { width: 100%; }
+  .valoramos-image img { width: 100%; border-radius: 0; }
 
+  /* Requisitos */
   .requisitos-grid { flex-direction: column; align-items: center; }
 
+  /* Beneficios */
   .ciclos-grid { flex-direction: column; align-items: center; }
-  .ciclo-card { width: 240px; }
+  .ciclo-card { width: 260px; }
 
+  /* Footer */
   .footer-content { flex-direction: column; }
   .footer-logo-col { flex: none; width: 100%; }
 }
